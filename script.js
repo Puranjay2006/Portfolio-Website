@@ -189,11 +189,9 @@ function initTypingEffect() {
     if (!typingElement) return;
 
     const phrases = [
-        'Software Engineer',
         'Full Stack Developer',
         'AI & ML Enthusiast',
-        'UI/UX Builder',
-        'Problem Solver'
+        'UI/UX Builder'
     ];
 
     let phraseIndex = 0;
