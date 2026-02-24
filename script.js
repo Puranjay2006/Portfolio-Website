@@ -233,20 +233,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// ==========================================
-// Project Card Tilt
-// ==========================================
-document.querySelectorAll('.project-card').forEach(card => {
-    card.addEventListener('mousemove', (e) => {
-        const rect = card.getBoundingClientRect();
-        const rotateX = ((e.clientY - rect.top)  - rect.height / 2) / 25;
-        const rotateY = (rect.width / 2 - (e.clientX - rect.left)) / 25;
-        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
-    });
-    card.addEventListener('mouseleave', () => {
-        card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
-    });
-});
 
 // ==========================================
 // Console Easter Egg
