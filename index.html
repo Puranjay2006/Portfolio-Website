@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puranjay Gambhir's Portfolio</title>
+
+    <!-- Favicon — PG initials as SVG -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230ea5e9'/><text x='32' y='44' font-family='Inter,Arial,sans-serif' font-size='26' font-weight='800' fill='white' text-anchor='middle'>PG</text></svg>">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +18,11 @@
     <!-- Cursor follower -->
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <!-- Navigation -->
     <nav class="navbar">
@@ -31,9 +40,6 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="nav-actions">
-                <button class="theme-toggle" aria-label="Toggle theme">
-                    <i class="fas fa-moon"></i>
-                </button>
                 <a href="Puranjay_Gambhir_CV_Latest_.pdf" class="btn btn-primary btn-resume" target="_blank">Resume</a>
             </div>
             <button class="mobile-menu-btn" aria-label="Toggle menu">
@@ -57,9 +63,25 @@
                     <span class="title-line">Puranjay</span>
                     <span class="title-line highlight">Gambhir</span>
                 </h1>
-                <p class="hero-subtitle">
-                    <span class="typing-text"></span>
-                </p>
+
+                <!-- Static roles replacing typing animation -->
+                <div class="hero-roles">
+                    <span class="hero-role">
+                        <i class="fas fa-layer-group"></i>
+                        Full Stack Developer
+                    </span>
+                    <span class="hero-role-sep">·</span>
+                    <span class="hero-role">
+                        <i class="fas fa-brain"></i>
+                        AI &amp; ML Enthusiast
+                    </span>
+                    <span class="hero-role-sep">·</span>
+                    <span class="hero-role">
+                        <i class="fas fa-paint-brush"></i>
+                        UI/UX Builder
+                    </span>
+                </div>
+
                 <div class="hero-meta">
                     <span class="hero-meta-item"><i class="fas fa-map-marker-alt"></i> Auckland, New Zealand</span>
                     <span class="hero-meta-item"><i class="fas fa-graduation-cap"></i> University of Auckland</span>
@@ -80,7 +102,7 @@
                     </a>
                 </div>
                 <div class="hero-social">
-                    <a href="https://www.linkedin.com/in/puranjay-gambhir-a342221bb/" target="_blank" class="social-link" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/pg142/" target="_blank" class="social-link" aria-label="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                     <a href="https://github.com/Puranjay2006" target="_blank" class="social-link" aria-label="GitHub">
@@ -195,8 +217,8 @@
                         </div>
                     </div>
                     <h3 class="edu-institution">University of Auckland</h3>
-                    <p class="edu-degree">Bachelor of Science — Computer Science</p>
-                    <p class="edu-desc">Computer Organisation, Object-Oriented Software Development, Mathematics for Computer Science, Software Development Methodologies, Algorithms & Data Structures, Discrete Structures in Mathematics & CS</p>
+                    <p class="edu-degree">Bachelor of Science — Computer Science (2nd Year)</p>
+                    <p class="edu-desc">Data Structures &amp; Algorithms, Object-Oriented Programming, Software Methodologies, Discrete Math</p>
                     <div class="edu-tags">
                         <span class="tag tag-accent">Current</span>
                         <span class="tag">Computer Science</span>
@@ -215,9 +237,9 @@
                         </div>
                     </div>
                     <h3 class="edu-institution">Massey University</h3>
-                    <p class="edu-degree">Bachelor of Information Science — Software Engineering</p>
+                    <p class="edu-degree">Diploma in Science and Technology — DipScTech</p>
                     <p class="edu-gpa">GPA: 8.7 / 9.0 &nbsp;(A+ Average)</p>
-                    <p class="edu-desc">Most Studious Student 2025, Class Representative, Resident Representative, "Excelling" Academic Progress (both semesters)</p>
+                    <p class="edu-desc">Calculus, Linear Algebra, Introduction to Programming, Statistical Foundations · Most Studious Student 2025, Class Representative, Resident Representative, "Excelling" Academic Progress (both semesters)</p>
                     <div class="edu-tags">
                         <span class="tag">8.7/9.0 GPA</span>
                         <span class="tag">Class Rep</span>
@@ -237,8 +259,8 @@
                         </div>
                     </div>
                     <h3 class="edu-institution">IIT Mandi × Masai School</h3>
-                    <p class="edu-degree">Minor in Artificial Intelligence & Data Science</p>
-                    <p class="edu-desc">Selected for the pioneering batch of this 15-credit course. Won the Youth Solves for India Contest; served as Hackathon Team Lead for 2 consecutive hackathons.</p>
+                    <p class="edu-degree">Minor in Artificial Intelligence &amp; Data Science</p>
+                    <p class="edu-desc">Machine Learning Fundamentals, Python for Data Science, Applied Statistics · Selected for the pioneering batch of this 15-credit course. Won the Youth Solves for India Contest; served as Hackathon Team Lead for 2 consecutive hackathons.</p>
                     <div class="edu-tags">
                         <span class="tag">15-Credit Minor</span>
                         <span class="tag">Pioneer Batch</span>
@@ -268,17 +290,14 @@
                         <div class="timeline-header">
                             <div>
                                 <span class="timeline-date">Nov 2025 – Present</span>
-                                <h3 class="timeline-title">Digital & Design Executive</h3>
+                                <h3 class="timeline-title">Digital &amp; Design Executive</h3>
                                 <h4 class="timeline-subtitle">Capital Media Partners Limited &nbsp;·&nbsp; Part-time, Hybrid &nbsp;·&nbsp; Auckland, NZ</h4>
                             </div>
                         </div>
                         <ul class="timeline-bullets">
                             <li>Develop <strong>high-quality marketing materials</strong> and <strong>branding assets</strong> including regional <strong>Wall Planners</strong> that deliver <strong>year-round brand visibility</strong></li>
-                            
                             <li>Manage <strong>website design</strong>, layout updates, and <strong>UI enhancements</strong>, integrating <strong>secure booking modals</strong>, <strong>automated Excel data handling</strong>, and <strong>cookie consent compliance</strong></li>
-                            
                             <li>Enhance <strong>user interfaces</strong> for a <strong>client booking web app</strong>, optimizing the <strong>user experience</strong> across <strong>complex administrative dashboards</strong></li>
-                            
                             <li>Lead <strong>digital marketing strategies</strong> and <strong>content calendars</strong>, scaling cross-platform brand presence to <strong>535+ posts</strong> and driving <strong>audience engagement</strong> by producing <strong>10 promotional reels</strong></li>
                         </ul>
                         <div class="timeline-tags">
@@ -305,8 +324,7 @@
                             </div>
                         </div>
                         <ul class="timeline-bullets">
-                            <li>Drive mental health platform adoption among university students through targeted marketing campaigns and peer support</li>
-                            <li>Certified <strong>TalkCampus Buddy</strong>, increasing platform awareness across campus</li>
+                            <li>Drive mental health platform adoption among university students through targeted marketing campaigns and peer support as a Certified <strong>TalkCampus Buddy</strong>, increasing platform awareness across campus</li>
                         </ul>
                         <div class="timeline-tags">
                             <span class="tag">Mental Health</span>
@@ -427,7 +445,7 @@
                                 <a href="https://nosocompany.com/" target="_blank" class="project-link" aria-label="Live Demo">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
-                                <a href="https://github.com/Puranjay2006" target="_blank" class="project-link" aria-label="View Code">
+                                <a href="https://github.com/Puranjay2006/noso_Company_Website" target="_blank" class="project-link" aria-label="View Code">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
@@ -438,7 +456,7 @@
                             <span class="project-category">Full-Stack Web App</span>
                             <div class="project-ext-links">
                                 <a href="https://nosocompany.com/" target="_blank" class="project-ext-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/Puranjay2006" target="_blank" class="project-ext-link" title="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/Puranjay2006/noso_Company_Website" target="_blank" class="project-ext-link" title="GitHub"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
                         <h3 class="project-title">
@@ -447,7 +465,7 @@
                         <p class="project-tagline">Quality Service On Demand</p>
                         <p class="project-description">
                             Engineered the frontend of a full-stack web app featuring secure auth,
-                            bookings & payments system, admin/partner dashboards, file handling,
+                            bookings &amp; payments system, admin/partner dashboards, file handling,
                             and a production-ready responsive UI.
                         </p>
                         <div class="project-tech">
@@ -471,6 +489,9 @@
                                 <a href="https://capitalmediapartners.co.nz/" target="_blank" class="project-link" aria-label="Live Demo">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
+                                <a href="https://github.com/Puranjay2006/CMPWebsite" target="_blank" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -479,6 +500,7 @@
                             <span class="project-category">Company Website</span>
                             <div class="project-ext-links">
                                 <a href="https://capitalmediapartners.co.nz/" target="_blank" class="project-ext-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/Puranjay2006/CMPWebsite" target="_blank" class="project-ext-link" title="GitHub"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
                         <h3 class="project-title">Capital Media Partners Website</h3>
@@ -492,6 +514,109 @@
                             <span>Tailwind CSS</span>
                             <span>JavaScript</span>
                             <span>Python</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Community Wall Planners -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://capitalmediapartners.co.nz/" target="_blank" class="project-link" aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-category">Design &amp; Print</span>
+                            <div class="project-ext-links">
+                                <a href="https://capitalmediapartners.co.nz/" target="_blank" class="project-ext-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Community Wall Planners</h3>
+                        <p class="project-description">
+                            Managed end-to-end design and production of <strong>2025–2026 Wall Planners</strong> for
+                            4 Auckland regions using Adobe InDesign &amp; Photoshop. Engineered interactive features
+                            (custom mazes, crosswords) and a layout delivering <strong>365-day brand visibility</strong>
+                            for advertising partners.
+                        </p>
+                        <div class="project-tech">
+                            <span>Adobe InDesign</span>
+                            <span>Adobe Photoshop</span>
+                            <span>Canva</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Flying High Digital Magazine -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://ils-magazine.github.io" target="_blank" class="project-link" aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-category">Web Development &nbsp;·&nbsp; Jul 2021 – Nov 2021</span>
+                            <div class="project-ext-links">
+                                <a href="https://ils-magazine.github.io" target="_blank" class="project-ext-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Flying High Digital Magazine</h3>
+                        <p class="project-description">
+                            Collaboratively designed the <strong>first-ever digital edition</strong> of my school magazine.
+                            Developed the website completely from scratch, writing <strong>20,000+ lines of code</strong>
+                            over <strong>400+ hours</strong> of development.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Web Development</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Yatree -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-category">UI/UX &amp; Front-End &nbsp;·&nbsp; Apr 2021 – Jun 2021</span>
+                        </div>
+                        <h3 class="project-title">Yatree – Tourism App Concept</h3>
+                        <p class="project-description">
+                            Co-created a curated tourism application demo that advanced to the
+                            <strong>Grand Finale of Toycathon 2021</strong>, a national innovation competition by
+                            the Ministry of Education, Govt. of India. Contributed to frontend design and content
+                            development to deliver a highly interactive user experience.
+                        </p>
+                        <div class="project-tech">
+                            <span>Front-End Design</span>
+                            <span>UI/UX</span>
                         </div>
                     </div>
                 </article>
@@ -511,7 +636,7 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-number">05.</span>
-                <h2 class="section-title">Awards & Leadership</h2>
+                <h2 class="section-title">Awards &amp; Leadership</h2>
                 <div class="section-line"></div>
             </div>
             <div class="awards-grid">
@@ -536,7 +661,7 @@
                         <span class="award-date">Apr 2021</span>
                         <h3 class="award-title">Regional Finalist — Wharton Global High School Investment Competition</h3>
                         <p class="award-org">The Wharton School, University of Pennsylvania</p>
-                        <p class="award-desc">Ranked <strong>Top 10 in Region 2</strong> out of 972 global teams as Team "Financial Miners". Developed a data-driven long-term investment portfolio with risk-adjusted projections.</p>
+                        <p class="award-desc">Ranked <strong>Top 10 in Region 2</strong> out of 972 global teams as Team "Financial Miners". Developed a data-driven long-term investment portfolio with sector analysis and risk-adjusted projections.</p>
                     </div>
                 </div>
 
@@ -549,6 +674,30 @@
                         <h3 class="award-title">Harvard Model United Nations Dubai 2022</h3>
                         <p class="award-org">Legal Committee · HMUN Dubai</p>
                         <p class="award-desc">Represented Algeria in the Legal Committee. Strengthened public speaking, diplomacy, and resolution-drafting at a 4-day international conference.</p>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="award-content">
+                        <span class="award-date">Jun 2021</span>
+                        <h3 class="award-title">Grand Finale Qualifier — Toycathon 2021</h3>
+                        <p class="award-org">Ministry of Education, Govt. of India</p>
+                        <p class="award-desc">Advanced to the national finals of a government-led innovation competition by co-developing <strong>Yatree</strong>, an interactive tourism app demo promoting local travel.</p>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="award-content">
+                        <span class="award-date">Oct 2021</span>
+                        <h3 class="award-title">HTML Coding Camp — Co-Organiser &amp; Mentor</h3>
+                        <p class="award-org">School Initiative</p>
+                        <p class="award-desc">Co-organized and hosted an interactive coding camp to teach <strong>HTML and CSS basics</strong> to <strong>30+ students</strong>, receiving excellent feedback from faculty.</p>
                     </div>
                 </div>
 
@@ -568,7 +717,7 @@
                             <span class="cert-link">View Certificate &nbsp;<i class="fas fa-external-link-alt"></i></span>
                         </div>
                     </a>
-                    
+
                     <a href="https://www.coursera.org/account/accomplishments/verify/OJEMVYKG4PKG" target="_blank" class="cert-card">
                         <div class="cert-icon">
                             <i class="fas fa-certificate"></i>
@@ -601,7 +750,7 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-number">06.</span>
-                <h2 class="section-title">Skills & Technologies</h2>
+                <h2 class="section-title">Skills &amp; Technologies</h2>
                 <div class="section-line"></div>
             </div>
             <div class="skills-content">
@@ -618,7 +767,7 @@
                 </div>
 
                 <div class="skill-group">
-                    <div class="skill-group-label"><i class="fas fa-layer-group"></i> Frameworks & Libraries</div>
+                    <div class="skill-group-label"><i class="fas fa-layer-group"></i> Frameworks &amp; Libraries</div>
                     <div class="skill-pills">
                         <span class="skill-pill">React</span>
                         <span class="skill-pill">Vite</span>
@@ -635,23 +784,23 @@
                 </div>
 
                 <div class="skill-group">
-                    <div class="skill-group-label"><i class="fas fa-brain"></i> AI & Machine Learning</div>
+                    <div class="skill-group-label"><i class="fas fa-brain"></i> AI &amp; Machine Learning</div>
                     <div class="skill-pills">
                         <span class="skill-pill">Supervised Learning</span>
                         <span class="skill-pill">Unsupervised Learning</span>
                         <span class="skill-pill">Neural Networks</span>
-                        <span class="skill-pill">Regression & Classification</span>
+                        <span class="skill-pill">Ensemble Methods</span>
+                        <span class="skill-pill">Anomaly Detection</span>
                         <span class="skill-pill">Decision Trees</span>
                         <span class="skill-pill">Random Forests</span>
                         <span class="skill-pill">XGBoost</span>
-                        <span class="skill-pill">Anomaly Detection</span>
                         <span class="skill-pill">Transfer Learning</span>
                         <span class="skill-pill">Model Evaluation</span>
                     </div>
                 </div>
 
                 <div class="skill-group">
-                    <div class="skill-group-label"><i class="fas fa-database"></i> Databases & Cloud</div>
+                    <div class="skill-group-label"><i class="fas fa-database"></i> Databases &amp; Cloud</div>
                     <div class="skill-pills">
                         <span class="skill-pill">MongoDB</span>
                         <span class="skill-pill">Firebase</span>
@@ -661,7 +810,7 @@
                 </div>
 
                 <div class="skill-group">
-                    <div class="skill-group-label"><i class="fas fa-tools"></i> Developer Tools & APIs</div>
+                    <div class="skill-group-label"><i class="fas fa-tools"></i> Developer Tools &amp; APIs</div>
                     <div class="skill-pills">
                         <span class="skill-pill">Git</span>
                         <span class="skill-pill">GitHub</span>
@@ -672,15 +821,15 @@
                 </div>
 
                 <div class="skill-group">
-                    <div class="skill-group-label"><i class="fas fa-robot"></i> Generative AI & LLMs</div>
+                    <div class="skill-group-label"><i class="fas fa-robot"></i> Generative AI &amp; LLMs</div>
                     <div class="skill-pills">
-                        <span class="skill-pill">Claude Opus/Sonnet 4.6</span>
-                        <span class="skill-pill">Gemini 3.1 Pro</span>
+                        <span class="skill-pill">Claude Opus / Sonnet</span>
+                        <span class="skill-pill">Gemini Pro</span>
                     </div>
                 </div>
 
                 <div class="skill-group">
-                    <div class="skill-group-label"><i class="fas fa-paint-brush"></i> Design & Productivity</div>
+                    <div class="skill-group-label"><i class="fas fa-paint-brush"></i> Design &amp; Productivity</div>
                     <div class="skill-pills">
                         <span class="skill-pill">Adobe InDesign</span>
                         <span class="skill-pill">Adobe Photoshop</span>
@@ -723,7 +872,7 @@
                         </div>
                         <i class="fas fa-arrow-right contact-arrow"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/puranjay-gambhir-a342221bb/" target="_blank" class="contact-card">
+                    <a href="https://www.linkedin.com/in/pg142/" target="_blank" class="contact-card">
                         <div class="contact-icon">
                             <i class="fab fa-linkedin-in"></i>
                         </div>
@@ -777,17 +926,17 @@
                     <div class="footer-column">
                         <h4>Connect</h4>
                         <ul>
-                            <li><a href="https://www.linkedin.com/in/puranjay-gambhir-a342221bb/" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://www.linkedin.com/in/pg142/" target="_blank">LinkedIn</a></li>
                             <li><a href="https://github.com/Puranjay2006" target="_blank">GitHub</a></li>
                             <li><a href="mailto:puranjay.gambhir@gmail.com">Email</a></li>
-                            <li><a href="Puranjay_Gambhir_CV_Latest.pdf" target="_blank">Resume</a></li>
+                            <li><a href="Puranjay_Gambhir_CV_Latest_.pdf" target="_blank">Resume</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 Puranjay Gambhir. All rights reserved.</p>
-                <p class="footer-credit">Designed & Built with <i class="fas fa-heart"></i> — Puranjay Gambhir's Portfolio</p>
+                <p class="footer-credit">Designed &amp; Built with <i class="fas fa-heart"></i> — Puranjay Gambhir's Portfolio</p>
             </div>
         </div>
     </footer>
@@ -804,7 +953,7 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="mobile-nav-footer">
-            <a href="Puranjay_Gambhir_CV_Latest.pdf" class="btn btn-primary" target="_blank">Resume</a>
+            <a href="Puranjay_Gambhir_CV_Latest_.pdf" class="btn btn-primary" target="_blank">Resume</a>
         </div>
     </div>
 

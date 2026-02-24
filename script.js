@@ -2,13 +2,22 @@
 // Portfolio Website JavaScript
 // ==========================================
 
+// Always scroll to top on page load/reload
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+window.addEventListener('beforeunload', () => {
+    window.scrollTo(0, 0);
+});
+window.scrollTo(0, 0);
+
 document.addEventListener('DOMContentLoaded', () => {
     initCustomCursor();
     initNavigation();
-    initThemeToggle();
-    initTypingEffect();
+    initThemeDefault();
     initScrollAnimations();
     initMobileMenu();
+    initScrollToTop();
 });
 
 // ==========================================
@@ -46,7 +55,6 @@ function initCustomCursor() {
 
         animateCursor();
 
-        // Include all interactive elements including new card types
         const interactiveElements = document.querySelectorAll(
             'a, button, .project-card, .skill-pill, .contact-card, .award-card, .edu-card, .cert-card, .timeline-content'
         );
@@ -142,96 +150,17 @@ function initNavigation() {
 }
 
 // ==========================================
-// Theme Toggle
+// Theme — always default to dark
 // ==========================================
-function initThemeToggle() {
-    const themeToggle = document.querySelector('.theme-toggle');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-
-    const savedTheme = localStorage.getItem('theme');
-    const systemTheme = prefersDark.matches ? 'dark' : 'light';
-    const currentTheme = savedTheme || systemTheme;
-
-    document.documentElement.setAttribute('data-theme', currentTheme);
-    updateThemeIcon(currentTheme);
-
-    if (themeToggle) {
-        themeToggle.addEventListener('click', () => {
-            const current = document.documentElement.getAttribute('data-theme');
-            const newTheme = current === 'dark' ? 'light' : 'dark';
-            document.documentElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateThemeIcon(newTheme);
-        });
-    }
-
-    prefersDark.addEventListener('change', (e) => {
-        if (!localStorage.getItem('theme')) {
-            const newTheme = e.matches ? 'dark' : 'light';
-            document.documentElement.setAttribute('data-theme', newTheme);
-            updateThemeIcon(newTheme);
-        }
-    });
-}
-
-function updateThemeIcon(theme) {
-    const icon = document.querySelector('.theme-toggle i');
-    if (icon) {
-        icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-    }
-}
-
-// ==========================================
-// Typing Effect
-// ==========================================
-function initTypingEffect() {
-    const typingElement = document.querySelector('.typing-text');
-    if (!typingElement) return;
-
-    const phrases = [
-        'Full Stack Developer',
-        'AI & ML Enthusiast',
-        'UI/UX Builder'
-    ];
-
-    let phraseIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-    let typingSpeed = 100;
-
-    function type() {
-        const currentPhrase = phrases[phraseIndex];
-
-        if (isDeleting) {
-            typingElement.textContent = currentPhrase.substring(0, charIndex - 1);
-            charIndex--;
-            typingSpeed = 50;
-        } else {
-            typingElement.textContent = currentPhrase.substring(0, charIndex + 1);
-            charIndex++;
-            typingSpeed = 100;
-        }
-
-        if (!isDeleting && charIndex === currentPhrase.length) {
-            isDeleting = true;
-            typingSpeed = 2000;
-        } else if (isDeleting && charIndex === 0) {
-            isDeleting = false;
-            phraseIndex = (phraseIndex + 1) % phrases.length;
-            typingSpeed = 500;
-        }
-
-        setTimeout(type, typingSpeed);
-    }
-
-    setTimeout(type, 1000);
+function initThemeDefault() {
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
 }
 
 // ==========================================
 // Scroll Animations
 // ==========================================
 function initScrollAnimations() {
-    // Elements to animate on scroll — includes all new card types
     const animatedElements = document.querySelectorAll(
         '.timeline-item, .project-card, .award-card, .edu-card, .cert-card, .skill-group, .contact-card'
     );
@@ -254,7 +183,6 @@ function initScrollAnimations() {
         elObserver.observe(el);
     });
 
-    // Section headers and about content
     const revealElements = document.querySelectorAll(
         '.section-header, .about-text, .about-image, .contact-content, .section-description, .subsection-title'
     );
@@ -290,7 +218,6 @@ function initMobileMenu() {
     mobileMenuBtn.addEventListener('click', () => {
         mobileMenuBtn.classList.toggle('active');
         mobileMenu.classList.toggle('active');
-
         document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
     });
 
@@ -300,6 +227,26 @@ function initMobileMenu() {
             mobileMenu.classList.remove('active');
             document.body.style.overflow = '';
         }
+    });
+}
+
+// ==========================================
+// Scroll To Top Button
+// ==========================================
+function initScrollToTop() {
+    const btn = document.getElementById('scrollToTop');
+    if (!btn) return;
+
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 400) {
+            btn.classList.add('visible');
+        } else {
+            btn.classList.remove('visible');
+        }
+    });
+
+    btn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 }
 
@@ -344,4 +291,4 @@ document.querySelectorAll('.project-card').forEach(card => {
 // ==========================================
 console.log('%c👋 Hello there!', 'font-size: 24px; font-weight: bold;');
 console.log('%cThanks for checking out my portfolio!', 'font-size: 14px;');
-console.log('%cFeel free to reach out: https://www.linkedin.com/in/puranjay-gambhir-a342221bb/', 'font-size: 12px; color: #0ea5e9;');
+console.log('%cFeel free to reach out: https://www.linkedin.com/in/pg142/', 'font-size: 12px; color: #0ea5e9;');
