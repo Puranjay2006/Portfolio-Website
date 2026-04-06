@@ -1,0 +1,55 @@
+Puranjay Gambhir
+♂phone(+64) 022-376-4778 /envel⌢pepuranjay.gambhir@gmail.com /linkedinlinkedin.com/in/pg142/ /githubgithub.com/Puranjay2006 /gl⌢bepuranjaygambhir.com
+Education
+University of AucklandMarch 2026 – Expected Graduation: May 2028
+Bachelor of Science — Computer Science (2nd Year) Auckland, New Zealand
+•Relevant Coursework:Data Structures & Algorithms, Object-Oriented Programming, Software Methodologies, Discrete
+Math
+•Activities:Class Representative
+Massey University Feb 2025 – Nov 2025
+Diploma in Science and Technology — DipScTech|GPA: 8.7/9.0 (A+ Average)Auckland, New Zealand
+•Relevant Coursework:Calculus, Linear Algebra, Introduction to Programming, Statistical Foundations
+•Awards & Activities:Most Studious Student 2025, “Excelling” Academic Progress (both semesters), Class Representative,
+Resident Representative
+Indian Institute of Technology, Mandi (IIT Mandi x Masai School)Aug 2025 – Expected: May 2026
+Minor in Artificial Intelligence & Data Science
+•Relevant Coursework:Machine Learning Fundamentals, Python for Data Science, Applied Statistics
+•Youth Solves for India Contest Winner; served asHackathon Team Lead for 2 consecutive hackathons
+Work Experience
+Technical Executive Mar 2026 – Present
+Google Developer Groups on Campus, University of Auckland|Part-time, Hybrid Auckland, New Zealand
+•Lead technical workshops and hackathons for a140+ memberGoogle-backed student developer community, designing event
+content across AI, web development, and Google technologies.
+•Mentor members through technical projects and competitions, collaborating with the executive team to integrate technical
+elements across club events.
+Digital & Design Executive Nov 2025 – Present
+Capital Media Partners Limited|Part-time, Hybrid Auckland, New Zealand
+•Droveweb presenceand platform improvements for a business serving300+ NZ businesses, enhancing customer discovery
+and targeted client advertising.
+•Optimisedfrontend architectureand user flows across client-facing administrative dashboards, improving operational
+efficiency for internal workflows.
+•Designed branding assets and regional Wall Planners delivering365-day brand visibility, leading digital marketing strategies
+scaling to535+ postsacross platforms.
+Projects
+Civic Connectὑ7|TypeScript, React, Vite, HTML5, CSS3, Gemini API, Google Maps API|Source Code Jan 2026
+•Won the Youth Solves for India Contestby building anAI-powered civic platform, auto-categorising issues using
+Gemini API and visualising them live via Google Maps API (Google Cloud).
+•Prototyped and shipped end-to-end within a48-hour hackathon sprintby delivering user auth, issue tracking (Pending→
+Resolved), interactive map, and admin dashboards.
+Route Continuity Gap Detectorὑ7|Python, Streamlit, Shapely, scikit-learn, Folium|Source Code Feb 2026
+•Built ageospatial Quality Assurance toolby detecting road-network endpoint gaps via Shapely geometry checks and an
+unsupervised ML model (IsolationForest), eliminating manual map inspection.
+•Delivered instant road network auditing within a24-hour hackathon sprintby generatingautomated error reportsand
+interactive map visualizations via Folium + Streamlit.
+NoSo Company Platformὑ7|React, TypeScript, Vite, Python, FastAPI, MongoDB|Source Code Jan 2026
+•Engineered the frontend of afull-stack web appby implementingsecure auth,bookings & payments system, and
+admin/partner dashboards, delivering a production-ready UI.
+Capital Media Partners Websiteὑ7|HTML5, CSS3 (Tailwind), JavaScript, Python|Source Code Nov 2025 – Jan 2026
+•Developed aresponsive company websitewith reusable components and abooking modal, automatingExcel data sync
+for300+ business records, saving40+ hoursof manual data entry across15+ industriesand60+ categories.
+Technical Skills
+Languages/Tools: Python, Java, JavaScript, TypeScript, C++, SQL, HTML/CSS, R, Git
+Libraries/Frameworks: React, FastAPI, Streamlit, Pandas, NumPy, scikit-learn, TensorFlow, Shapely, Folium
+AI & ML: Supervised & Unsupervised Learning, Neural Networks, Ensemble Methods, Anomaly Detection
+Databases, Cloud & APIs: MongoDB, PostgreSQL, Firebase, Supabase, Google Cloud, Google Maps API, Gemini API
+Certifications: Supervised Machine Learning ὑ7, Advanced Learning Algorithms ὑ7— DeepLearning.AI, Coursera (2025)
