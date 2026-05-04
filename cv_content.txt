@@ -3,26 +3,28 @@ Puranjay Gambhir
 Education
 University of AucklandMarch 2026 – Expected Graduation: May 2028
 Bachelor of Science — Computer Science (2nd Year) Auckland, New Zealand
+•Awards & Activities:1st Place in DEVS x SESA 2026 Beginners Hackathon; Dual Sponsor Track Winner (Avalanche &
+NewMoney) in WEB3UOA Hackathon; Class Representative
 •Relevant Coursework:Data Structures & Algorithms, Object-Oriented Programming, Software Methodologies, Discrete
 Math
-•Activities:Class Representative
 Massey University Feb 2025 – Nov 2025
 Diploma in Science and Technology — DipScTech|GPA: 8.7/9.0 (A+ Average)Auckland, New Zealand
-•Relevant Coursework:Calculus, Linear Algebra, Introduction to Programming, Statistical Foundations
-•Awards & Activities:Most Studious Student 2025, “Excelling” Academic Progress (both semesters), Class Representative,
+•Awards & Activities:Most Studious Student 2025; “Excelling” Academic Progress (both semesters); Class Representative;
 Resident Representative
+•Relevant Coursework:Calculus, Linear Algebra, Introduction to Programming, Statistical Foundations
 Indian Institute of Technology, Mandi (IIT Mandi x Masai School)Aug 2025 – Expected: May 2026
 Minor in Artificial Intelligence & Data Science
+•Awards & Activities:Youth Solves for India Contest Winner; served as Team Lead for 2 Hackathons
 •Relevant Coursework:Machine Learning Fundamentals, Python for Data Science, Applied Statistics
-•Youth Solves for India Contest Winner; served asHackathon Team Lead for 2 consecutive hackathons
 Work Experience
 Technical Executive Mar 2026 – Present
 Google Developer Groups on Campus, University of Auckland|Part-time, Hybrid Auckland, New Zealand
-•Lead technical workshops and hackathons for a140+ memberGoogle-backed student developer community, designing event
-content across AI, web development, and Google technologies.
-•Mentor members through technical projects and competitions, collaborating with the executive team to integrate technical
-elements across club events.
-Digital & Design Executive Nov 2025 – Present
+•Leading technical workshops and hackathons for a140+ member Google-backedstudent developer community, designing
+event content across AI, web development, and Google technologies while also mentoring members and contributing to theclub
+website development.
+•Serving aslead organiserforALLUNI 2026, a programming contest spanning23 clubsacross9 citiesin2 countries,
+coordinating logistics and collaborating with the executive team across club events.
+Digital & Design Executive Nov 2025 – Mar 2026
 Capital Media Partners Limited|Part-time, Hybrid Auckland, New Zealand
 •Droveweb presenceand platform improvements for a business serving300+ NZ businesses, enhancing customer discovery
 and targeted client advertising.
@@ -31,25 +33,25 @@ efficiency for internal workflows.
 •Designed branding assets and regional Wall Planners delivering365-day brand visibility, leading digital marketing strategies
 scaling to535+ postsacross platforms.
 Projects
+L2Earnὑ7|Next.js, React, TypeScript, Tailwind CSS, wagmi, viem, EAS, ENS, dNZD|Source Code Apr 2026
+•Secured Dual Sponsor Track wins (Avalanche & NewMoney)at the WEB3UOA Hackathon by building a learn-to-earn
+platform where humans and AI agents earn NFT credentials and settledNZD stablecoinrewards on Base Sepolia, with
+MetaMask auth,ENS identity, andEAS certificateseliminating the need for banks and intermediaries.
+StarGazeὑ7|React, TypeScript, Vite, Tailwind CSS, Framer Motion|Source Code Apr 2026
+•Won 1st Placeat the DEVS x SESA Beginners Hackathon byleading frontend developmentand unifying cloud cover, light
+pollution, and live ISS tracking into a single stargazing planning app, integrating Open-Meteo, wheretheiss.at, and
+OpenStreetMap Nominatim APIs and optimising forcross-device responsiveness.
 Civic Connectὑ7|TypeScript, React, Vite, HTML5, CSS3, Gemini API, Google Maps API|Source Code Jan 2026
-•Won the Youth Solves for India Contestby building anAI-powered civic platform, auto-categorising issues using
-Gemini API and visualising them live via Google Maps API (Google Cloud).
-•Prototyped and shipped end-to-end within a48-hour hackathon sprintby delivering user auth, issue tracking (Pending→
-Resolved), interactive map, and admin dashboards.
-Route Continuity Gap Detectorὑ7|Python, Streamlit, Shapely, scikit-learn, Folium|Source Code Feb 2026
-•Built ageospatial Quality Assurance toolby detecting road-network endpoint gaps via Shapely geometry checks and an
-unsupervised ML model (IsolationForest), eliminating manual map inspection.
-•Delivered instant road network auditing within a24-hour hackathon sprintby generatingautomated error reportsand
-interactive map visualizations via Folium + Streamlit.
-NoSo Company Platformὑ7|React, TypeScript, Vite, Python, FastAPI, MongoDB|Source Code Jan 2026
-•Engineered the frontend of afull-stack web appby implementingsecure auth,bookings & payments system, and
-admin/partner dashboards, delivering a production-ready UI.
+•Won the Youth Solves for India Contestby building anAI-powered civic platformwithin a 2-day hackathon sprint,
+shipping Gemini-powered issue auto-categorisation, real-time Google Maps visualisation,user auth, issue tracking, andadmin
+dashboards.
 Capital Media Partners Websiteὑ7|HTML5, CSS3 (Tailwind), JavaScript, Python|Source Code Nov 2025 – Jan 2026
-•Developed aresponsive company websitewith reusable components and abooking modal, automatingExcel data sync
-for300+ business records, saving40+ hoursof manual data entry across15+ industriesand60+ categories.
+•Developed aresponsive company websitewith abooking modal, automatingExcel data syncfor300+ business
+recordsand saving40+ hoursof manual data entry across15+ industriesand60+ categories.
 Technical Skills
 Languages/Tools: Python, Java, JavaScript, TypeScript, C++, SQL, HTML/CSS, R, Git
-Libraries/Frameworks: React, FastAPI, Streamlit, Pandas, NumPy, scikit-learn, TensorFlow, Shapely, Folium
+Libraries/Frameworks: React, Next.js, FastAPI, Streamlit, Pandas, NumPy, scikit-learn, TensorFlow, Shapely, Folium
 AI & ML: Supervised & Unsupervised Learning, Neural Networks, Ensemble Methods, Anomaly Detection
-Databases, Cloud & APIs: MongoDB, PostgreSQL, Firebase, Supabase, Google Cloud, Google Maps API, Gemini API
+Infrastructure: MongoDB, PostgreSQL, Firebase, Supabase, Google Cloud, Google Maps API, Gemini API, Anthropic API
+Blockchain & Web3: ENS, EAS, MetaMask, NFT Minting, On-chain Credentials, Stablecoin Integration, Base/Sepolia
 Certifications: Supervised Machine Learning ὑ7, Advanced Learning Algorithms ὑ7— DeepLearning.AI, Coursera (2025)
