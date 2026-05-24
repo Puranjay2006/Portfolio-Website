@@ -37,6 +37,9 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
                 <a href="Puranjay_Gambhir_CV_.pdf" class="btn btn-primary btn-resume" target="_blank">Resume</a>
             </div>
             <button class="mobile-menu-btn" aria-label="Toggle menu">
@@ -57,6 +60,7 @@
                 </h1>
 
                 <!-- Static roles: two pills only -->
+                <p class="hero-typewriter"><span id="typewriter-text"></span><span class="typewriter-cursor"></span></p>
                 <div class="hero-roles">
                     <span class="hero-role">
                         <i class="fas fa-layer-group"></i>
@@ -132,21 +136,69 @@
                         at the <a href="https://www.auckland.ac.nz/" target="_blank" class="uoa-link">University of Auckland</a>.
                     </p>
                     <p class="lead">
-                        Started building for the web at 14. First project was a 20,000-line school magazine that took 400+ hours. It's been hard to stop since.
+                        Started building for the web at 14. We built the first ever digital magazine of our school with over 20,000 lines of code. It's been hard to stop since.
                     </p>
-                    <p>
-                        Along with my team, I won <strong>1st Place at the DEVS x SESA 2026 Beginners Hackathon</strong> with <strong>StarGaze</strong>,
-                        and secured <strong>Dual Sponsor Track wins (Avalanche &amp; NewMoney) at the WEB3UOA Hackathon</strong> with <strong>L2Earn</strong>.
-                        Earlier, I won the <strong>Youth Solves for India contest</strong> with <strong>Civic Connect</strong> and built the
-                        <strong>Route Continuity Gap Detector</strong> in 24 hours, both as <strong>Hackathon Team Lead</strong> at IIT Mandi × Masai School.
-                    </p>
-                    <p>
-                        I currently serve as a <strong>Technical Executive</strong> at <strong>Google Developer Groups on Campus (UoA)</strong>,
-                        leading workshops and hackathons for a 140+ member community. Previously, as <strong>Digital &amp; Design Executive</strong>
-                        at <a href="https://capitalmediapartners.co.nz/" target="_blank" class="inline-link">Capital Media Partners Ltd.</a>,
-                        I grew the brand to <strong>535+ posts in 3 months</strong>, designed <strong>Community Wall Planners</strong> for 4 Auckland regions,
-                        and shipped UI improvements to the <a href="https://nosocompany.com/" target="_blank" class="inline-link">noSo Company</a> platform.
-                    </p>
+                    <!-- Wins -->
+                    <div class="about-wins-card">
+                        <div class="about-card-label"><i class="fas fa-trophy"></i> Hackathon &amp; Contest Wins</div>
+                        <ul class="about-wins-list">
+                            <li>
+                                <span class="win-badge win-badge--gold">1st Place</span>
+                                <div class="win-detail">
+                                    <span class="win-title">DEVS x SESA 2026 Beginners Hackathon</span>
+                                    <span class="win-project">StarGaze</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="win-badge win-badge--web3">Dual Sponsor</span>
+                                <div class="win-detail">
+                                    <span class="win-title">WEB3UOA Hackathon · Avalanche &amp; NewMoney</span>
+                                    <span class="win-project">L2Earn</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="win-badge win-badge--green">Contest Win</span>
+                                <div class="win-detail">
+                                    <span class="win-title">Youth Solves for India · IIT Mandi × Masai</span>
+                                    <span class="win-project">Civic Connect</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="win-badge win-badge--neutral">24h Build</span>
+                                <div class="win-detail">
+                                    <span class="win-title">Hackathon Team Lead · IIT Mandi × Masai</span>
+                                    <span class="win-project">Route Continuity Gap Detector</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Roles -->
+                    <div class="about-roles-card">
+                        <div class="about-card-label"><i class="fas fa-briefcase"></i> Roles</div>
+                        <div class="about-role-item">
+                            <div class="about-role-icon"><i class="fab fa-google"></i></div>
+                            <div class="about-role-body">
+                                <div class="about-role-header">
+                                    <span class="about-role-title">Technical Executive</span>
+                                    <span class="about-role-date">Mar 2026 – Present</span>
+                                </div>
+                                <span class="about-role-org">Google Developer Groups on Campus, UoA</span>
+                                <span class="about-role-desc">Leading workshops &amp; hackathons for a 180+ member community</span>
+                            </div>
+                        </div>
+                        <div class="about-role-item">
+                            <div class="about-role-icon"><i class="fas fa-building"></i></div>
+                            <div class="about-role-body">
+                                <div class="about-role-header">
+                                    <span class="about-role-title">Digital &amp; Design Executive Intern</span>
+                                    <span class="about-role-date">Nov 2025 – Mar 2026</span>
+                                </div>
+                                <span class="about-role-org"><a href="https://capitalmediapartners.co.nz/" target="_blank" class="inline-link">Capital Media Partners Ltd.</a></span>
+                                <span class="about-role-desc">535+ posts in 3 months, Wall Planners for 4 Auckland regions, <a href="https://nosocompany.com/" target="_blank" class="inline-link">noSo</a> UI improvements</span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="about-stats">
                         <div class="stat-item">
                             <span class="stat-number">8.7<span class="stat-sub">/9.0</span></span>
@@ -197,7 +249,7 @@
                     <h3 class="edu-institution">University of Auckland</h3>
                     <p class="edu-degree"><strong>Bachelor of Science</strong>: Computer Science (2nd Year)</p>
                     <p class="edu-desc"><strong>Relevant Coursework:</strong> Data Structures &amp; Algorithms, Object-Oriented Programming, Software Methodologies, Discrete Math</p>
-                    <p class="edu-desc"><strong>Awards &amp; Activities:</strong> 1st Place in DEVS x SESA 2026 Beginners Hackathon, Dual Sponsor Track Winner (Avalanche &amp; NewMoney) in WEB3UOA Hackathon, Class Representative</p>
+                    <p class="edu-desc"><strong>Awards &amp; Activities:</strong> 1st Place in DEVS x SESA 2026 Beginners Hackathon, Dual Sponsor Track Winner (Avalanche &amp; NewMoney) in WEB3UOA Hackathon, Technical Executive at GDGC Club, Class Representative</p>
                     <div class="edu-tags">
                         <span class="tag tag-accent">Current</span>
                         <span class="tag">Computer Science</span>
@@ -262,86 +314,98 @@
                 <h2 class="section-title">Experience</h2>
                 <div class="section-line"></div>
             </div>
-            <div class="timeline">
+            <!-- Work Experience -->
+            <div class="exp-subsection">
+                <h3 class="exp-subsection-title"><i class="fas fa-briefcase"></i> Work Experience</h3>
+                <div class="timeline">
 
-                <!-- Google Developer Groups on Campus -->
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <div>
-                                <span class="timeline-date">Mar 2026 - Present</span>
-                                <h3 class="timeline-title">Technical Executive</h3>
-                                <h4 class="timeline-subtitle">Google Developer Groups on Campus, University of Auckland &nbsp;·&nbsp; Part-time, Hybrid &nbsp;·&nbsp; Auckland, NZ</h4>
+                    <!-- Capital Media Partners -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <span class="timeline-date">Nov 2025 - Mar 2026</span>
+                                    <h3 class="timeline-title">Digital &amp; Design Executive Intern</h3>
+                                    <h4 class="timeline-subtitle">Capital Media Partners Limited &nbsp;·&nbsp; NZ Startup &nbsp;·&nbsp; Part-time Internship, Hybrid &nbsp;·&nbsp; Auckland, NZ</h4>
+                                </div>
+                            </div>
+                            <ul class="timeline-bullets">
+                                <li>Built the website using <strong>HTML5, Tailwind CSS, and JavaScript</strong> for a startup serving <strong>300+ NZ businesses</strong>, optimising frontend architecture and user flows across client-facing dashboards, writing <strong>unit tests</strong> and conducting <strong>peer reviews</strong> to ensure reliability.</li>
+                                <li>Automated Excel data sync using <strong>Python</strong> for all 300+ business records across <strong>18 industries</strong> and <strong>60 categories</strong>, saving <strong>40+ hours</strong> of manual data entry and streamlining data management.</li>
+                                <li>Led digital marketing strategies scaling to <strong>535+ posts</strong> across platforms and designed regional Wall Planners delivering <strong>365-day brand visibility</strong>, driving consistent brand exposure across Auckland.</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Tailwind CSS</span>
+                                <span class="tag">Adobe InDesign</span>
+                                <span class="tag">JavaScript</span>
                             </div>
                         </div>
-                        <ul class="timeline-bullets">
-                            <li>Leading technical workshops and hackathons for a <strong>180+ member Google-backed student developer community</strong>, designing event content across <strong>AI, web development, and Google technologies</strong>, mentoring members and contributing to the <strong>club website development</strong></li>
-                            <li>Serving as <strong>lead organiser</strong> for <strong>ALLUNI 2026</strong>, an international programming contest spanning <strong>23 clubs across 9 cities</strong>, and as a <strong>technical speaker</strong> at workshops and hackathons, delivering an <strong>NFC workshop to 40+ attendees</strong>, receiving excellent feedback</li>
-                        </ul>
-                        <div class="timeline-tags">
-                            <span class="tag">Leadership</span>
-                            <span class="tag">Mentoring</span>
-                            <span class="tag">Workshops</span>
-                            <span class="tag">Hackathons</span>
-                        </div>
                     </div>
-                </div>
 
-                <!-- Capital Media Partners -->
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <div>
-                                <span class="timeline-date">Nov 2025 - Mar 2026</span>
-                                <h3 class="timeline-title">Digital &amp; Design Executive Intern</h3>
-                                <h4 class="timeline-subtitle">Capital Media Partners Limited &nbsp;·&nbsp; NZ Startup &nbsp;·&nbsp; Part-time Internship, Hybrid &nbsp;·&nbsp; Auckland, NZ</h4>
+                </div>
+            </div>
+
+            <!-- Volunteering & Leadership -->
+            <div class="exp-subsection">
+                <h3 class="exp-subsection-title"><i class="fas fa-hands-helping"></i> Volunteering &amp; Leadership</h3>
+                <div class="timeline">
+
+                    <!-- Google Developer Groups on Campus -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <span class="timeline-date">Mar 2026 - Present</span>
+                                    <h3 class="timeline-title">Technical Executive</h3>
+                                    <h4 class="timeline-subtitle">Google Developer Groups on Campus, University of Auckland &nbsp;·&nbsp; Part-time, Hybrid &nbsp;·&nbsp; Auckland, NZ</h4>
+                                </div>
+                            </div>
+                            <ul class="timeline-bullets">
+                                <li>Leading technical workshops and hackathons for a <strong>180+ member Google-backed student developer community</strong>, designing event content across <strong>AI, web development, and Google technologies</strong>, mentoring members and contributing to the <strong>club website development</strong></li>
+                                <li>Serving as <strong>lead organiser</strong> for <strong>ALLUNI 2026</strong>, an international programming contest spanning <strong>23 clubs across 9 cities</strong>, and as a <strong>technical speaker</strong> at workshops and hackathons, delivering an <strong>NFC workshop to 40+ attendees</strong>, receiving excellent feedback</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="tag">Leadership</span>
+                                <span class="tag">Mentoring</span>
+                                <span class="tag">Workshops</span>
+                                <span class="tag">Hackathons</span>
                             </div>
                         </div>
-                        <ul class="timeline-bullets">
-                            <li>Built the website using <strong>HTML5, Tailwind CSS, and JavaScript</strong> for a startup serving <strong>300+ NZ businesses</strong>, optimising frontend architecture and user flows across client-facing dashboards, writing <strong>unit tests</strong> and conducting <strong>peer reviews</strong> to ensure reliability.</li>
-                            <li>Automated Excel data sync using <strong>Python</strong> for all 300+ business records across <strong>18 industries</strong> and <strong>60 categories</strong>, saving <strong>40+ hours</strong> of manual data entry and streamlining data management.</li>
-                            <li>Led digital marketing strategies scaling to <strong>535+ posts</strong> across platforms and designed regional Wall Planners delivering <strong>365-day brand visibility</strong>, driving consistent brand exposure across Auckland.</li>
-                        </ul>
-                        <div class="timeline-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">TypeScript</span>
-                            <span class="tag">Tailwind CSS</span>
-                            <span class="tag">Adobe InDesign</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
                     </div>
-                </div>
 
-                <!-- TalkCampus -->
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <div>
-                                <span class="timeline-date">Aug 2025 - Present</span>
-                                <h3 class="timeline-title">TalkCampus Ambassador</h3>
-                                <h4 class="timeline-subtitle">TalkLife &nbsp;·&nbsp; Freelance, Remote &nbsp;·&nbsp; Auckland, NZ</h4>
+                    <!-- TalkCampus -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <span class="timeline-date">Aug 2025 - Present</span>
+                                    <h3 class="timeline-title">TalkCampus Ambassador</h3>
+                                    <h4 class="timeline-subtitle">TalkLife &nbsp;·&nbsp; Freelance, Remote &nbsp;·&nbsp; Auckland, NZ</h4>
+                                </div>
+                            </div>
+                            <ul class="timeline-bullets">
+                                <li>Drive mental health platform adoption among university students through targeted marketing campaigns and peer support as a Certified <strong>TalkCampus Buddy</strong>, increasing platform awareness across campus</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="tag">Mental Health</span>
+                                <span class="tag">Marketing</span>
+                                <span class="tag">Peer Support</span>
                             </div>
                         </div>
-                        <ul class="timeline-bullets">
-                            <li>Drive mental health platform adoption among university students through targeted marketing campaigns and peer support as a Certified <strong>TalkCampus Buddy</strong>, increasing platform awareness across campus</li>
-                        </ul>
-                        <div class="timeline-tags">
-                            <span class="tag">Mental Health</span>
-                            <span class="tag">Marketing</span>
-                            <span class="tag">Peer Support</span>
-                        </div>
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
     </section>
@@ -357,14 +421,19 @@
             <p class="section-description">
                 Things I've built: from Web3 learn-to-earn apps and stargazing tools to AI civic platforms and geospatial ML. Most of them came out of hackathons. Turns out I work better under pressure.
             </p>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web3">Web3</button>
+                <button class="filter-btn" data-filter="ai">AI / ML</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
             <div class="projects-grid">
 
                 <!-- L2Earn: Most Recent -->
-                <article class="project-card project-card--accent">
+                <article class="project-card project-card--accent" data-category="web3 frontend">
                     <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
+                        <img src="project%20images/L2Earn.png" alt="L2Earn project screenshot" class="project-img">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="https://l2learn-web3.vercel.app" target="_blank" class="project-link" aria-label="Live Demo">
@@ -405,11 +474,9 @@
                 </article>
 
                 <!-- StarGaze -->
-                <article class="project-card project-card--accent">
+                <article class="project-card project-card--accent" data-category="frontend">
                     <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-star"></i>
-                        </div>
+                        <img src="project%20images/StarGaze.png" alt="StarGaze project screenshot" class="project-img">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="https://stargaze-app.vercel.app" target="_blank" class="project-link" aria-label="Live Demo">
@@ -448,11 +515,9 @@
                     </div>
                 </article>
                 <!-- Civic Connect -->
-                <article class="project-card">
+                <article class="project-card" data-category="ai frontend">
                     <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-city"></i>
-                        </div>
+                        <img src="project%20images/Civic%20Connect.png" alt="Civic Connect project screenshot" class="project-img">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="https://civic-connect-8y5i.onrender.com" target="_blank" class="project-link" aria-label="Live Demo">
@@ -490,11 +555,9 @@
                 </article>
 
                 <!-- Route Continuity Gap Detector -->
-                <article class="project-card">
+                <article class="project-card" data-category="ai">
                     <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-map-marked-alt"></i>
-                        </div>
+                        <img src="project%20images/Route%20Continuity%20Gap%20Detector.png" alt="Route Continuity Gap Detector screenshot" class="project-img">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="https://gapdetectorhackathon30-jhx7edzznqoz3mdrvfgkb2.streamlit.app/" target="_blank" class="project-link" aria-label="Live Demo">
@@ -532,7 +595,7 @@
                 </article>
 
                 <!-- noso Company Platform -->
-                <article class="project-card">
+                <article class="project-card" data-category="frontend">
                     <div class="project-image">
                         <div class="project-placeholder">
                             <i class="fas fa-store"></i>
@@ -573,11 +636,9 @@
                 </article>
 
                 <!-- Capital Media Partners Website -->
-                <article class="project-card">
+                <article class="project-card" data-category="frontend">
                     <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-globe"></i>
-                        </div>
+                        <img src="project%20images/Capital%20Media%20Partners.png" alt="Capital Media Partners website screenshot" class="project-img">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="https://capitalmediapartners.co.nz/" target="_blank" class="project-link" aria-label="Live Demo">
@@ -614,11 +675,9 @@
                 </article>
 
                 <!-- Community Wall Planners -->
-                <article class="project-card">
+                <article class="project-card" data-category="design">
                     <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-calendar-alt"></i>
-                        </div>
+                        <img src="project%20images/Onehunga%20Wall%20Planner%20Design.jpg" alt="Community Wall Planner design" class="project-img">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="https://capitalmediapartners.co.nz/" target="_blank" class="project-link" aria-label="Live Demo">
@@ -650,14 +709,12 @@
                 </article>
 
                 <!-- Flying High Digital Magazine -->
-                <article class="project-card">
+                <article class="project-card" data-category="frontend design">
                     <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-newspaper"></i>
-                        </div>
+                        <img src="project%20images/Flying%20High%20Magazine.png" alt="Flying High Digital Magazine screenshot" class="project-img">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://ils-magazine.github.io" target="_blank" class="project-link" aria-label="Live Demo">
+                                <a href="https://ils-magazine.github.io/Flying_High/" target="_blank" class="project-link" aria-label="Live Demo">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
                             </div>
@@ -667,14 +724,12 @@
                         <div class="project-header">
                             <span class="project-category">Web Development &nbsp;·&nbsp; Jul 2021 - Nov 2021</span>
                             <div class="project-ext-links">
-                                <a href="https://ils-magazine.github.io" target="_blank" class="project-ext-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://ils-magazine.github.io/Flying_High/" target="_blank" class="project-ext-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                         <h3 class="project-title">Flying High Digital Magazine</h3>
                         <p class="project-description">
-                            Collaboratively designed the <strong>first-ever digital edition</strong> of my school magazine.
-                            Developed the website completely from scratch, writing <strong>20,000+ lines of code</strong>
-                            over <strong>400+ hours</strong> of development.
+                            We built the <strong>first ever digital magazine of our school</strong> — over <strong>20,000 lines of code</strong>, written from scratch as a team over <strong>400+ hours</strong> of development.
                         </p>
                         <div class="project-tech">
                             <span>HTML</span>
@@ -685,14 +740,12 @@
                 </article>
 
                 <!-- Yatree -->
-                <article class="project-card">
+                <article class="project-card" data-category="design frontend">
                     <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-plane"></i>
-                        </div>
+                        <img src="project%20images/Yatree.jpg" alt="Yatree tourism app screenshot" class="project-img">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="project-link" aria-label="Demo">
+                                <a href="https://jqoikne8cfrtgfgy3bz3xq.on.drv.tw/Yatree/Yatree%20Prototype/tours.html" target="_blank" class="project-link" aria-label="Demo">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
                             </div>
@@ -702,7 +755,7 @@
                         <div class="project-header">
                             <span class="project-category">UI/UX &amp; Front-End &nbsp;·&nbsp; Apr 2021 - Jun 2021</span>
                             <div class="project-ext-links">
-                                <a href="#" class="project-ext-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://jqoikne8cfrtgfgy3bz3xq.on.drv.tw/Yatree/Yatree%20Prototype/tours.html" target="_blank" class="project-ext-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                         <h3 class="project-title">Yatree - Tourism App Concept</h3>
@@ -1042,7 +1095,7 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <span class="logo-text">PG</span>
-                    <p>CS student, hackathon builder, occasional design nerd.</p>
+                    <p>CS student, hackathon builder, passionate about building real world projects.</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
@@ -1088,6 +1141,44 @@
         <div class="mobile-nav-footer">
             <a href="Puranjay_Gambhir_CV_.pdf" class="btn btn-primary" target="_blank">Resume</a>
         </div>
+    </div>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-widget" id="chatbotWidget">
+        <button class="chatbot-toggle" id="chatbotToggle" aria-label="Chat with Puranjay">
+            <i class="fas fa-comment-dots"></i>
+        </button>
+        <div class="chatbot-panel" id="chatbotPanel" aria-hidden="true">
+            <div class="chatbot-header">
+                <div class="chatbot-header-info">
+                    <div class="chatbot-avatar">
+                        <span>PG</span>
+                        <span class="chatbot-avatar-ring"></span>
+                    </div>
+                    <div>
+                        <div class="chatbot-header-name">Puranjay</div>
+                        <div class="chatbot-header-status"><span class="chatbot-status-dot"></span> Online now</div>
+                    </div>
+                </div>
+                <button class="chatbot-close-btn" id="chatbotCloseBtn" aria-label="Close chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages"></div>
+            <div class="chatbot-input-row">
+                <input type="text" class="chatbot-input" id="chatbotInput" placeholder="Type a question..." autocomplete="off" />
+                <button class="chatbot-send" id="chatbotSend" aria-label="Send message">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Full-page background: orbs + starfield -->
+    <div class="page-bg" aria-hidden="true">
+        <div class="page-orb page-orb-1"></div>
+        <div class="page-orb page-orb-2"></div>
+        <div class="page-orb page-orb-3"></div>
+        <div class="page-orb page-orb-4"></div>
+        <canvas id="pageCanvas" class="page-canvas"></canvas>
     </div>
 
     <script src="script.js"></script>
