@@ -9,72 +9,12 @@ if ('scrollRestoration' in history) {
 window.scrollTo(0, 0);
 
 document.addEventListener('DOMContentLoaded', () => {
-    initCustomCursor();
     initNavigation();
     initThemeDefault();
     initScrollAnimations();
     initMobileMenu();
     initScrollToTop();
 });
-
-// ==========================================
-// Custom Cursor
-// ==========================================
-function initCustomCursor() {
-    const cursor = document.querySelector('.cursor');
-    const follower = document.querySelector('.cursor-follower');
-
-    if (!cursor || !follower) return;
-
-    if (window.matchMedia('(pointer: fine)').matches) {
-        let mouseX = 0, mouseY = 0;
-        let cursorX = 0, cursorY = 0;
-        let followerX = 0, followerY = 0;
-
-        document.addEventListener('mousemove', (e) => {
-            mouseX = e.clientX;
-            mouseY = e.clientY;
-        });
-
-        function animateCursor() {
-            cursorX += (mouseX - cursorX) * 0.2;
-            cursorY += (mouseY - cursorY) * 0.2;
-            cursor.style.left = cursorX + 'px';
-            cursor.style.top = cursorY + 'px';
-
-            followerX += (mouseX - followerX) * 0.1;
-            followerY += (mouseY - followerY) * 0.1;
-            follower.style.left = followerX + 'px';
-            follower.style.top = followerY + 'px';
-
-            requestAnimationFrame(animateCursor);
-        }
-        animateCursor();
-
-        const interactiveElements = document.querySelectorAll(
-            'a, button, .project-card, .skill-pill, .contact-card, .award-card, .edu-card, .cert-card, .timeline-content'
-        );
-        interactiveElements.forEach(el => {
-            el.addEventListener('mouseenter', () => {
-                cursor.classList.add('active');
-                follower.classList.add('active');
-            });
-            el.addEventListener('mouseleave', () => {
-                cursor.classList.remove('active');
-                follower.classList.remove('active');
-            });
-        });
-
-        document.addEventListener('mouseleave', () => {
-            cursor.style.opacity = '0';
-            follower.style.opacity = '0';
-        });
-        document.addEventListener('mouseenter', () => {
-            cursor.style.opacity = '1';
-            follower.style.opacity = '0.5';
-        });
-    }
-}
 
 // ==========================================
 // Navigation
@@ -220,19 +160,6 @@ function initScrollToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 }
-
-// ==========================================
-// Parallax — Hero Orbs
-// ==========================================
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    if (scrolled < window.innerHeight) {
-        document.querySelectorAll('.gradient-orb').forEach((orb, i) => {
-            orb.style.transform = `translate(0, ${scrolled * (0.3 + i * 0.08)}px)`;
-        });
-    }
-});
-
 
 // ==========================================
 // Console Easter Egg
