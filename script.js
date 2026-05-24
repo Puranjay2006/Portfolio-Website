@@ -30,10 +30,17 @@ function initScrollClamp() {
     const footer = document.querySelector('footer');
     if (!footer) return;
 
+    let busy = false;
+
     function clamp() {
-        const maxScroll = footer.offsetTop + footer.offsetHeight - window.innerHeight;
-        if (window.scrollY > maxScroll) {
-            window.scrollTo({ top: Math.max(0, maxScroll), behavior: 'instant' });
+        if (busy) return;
+        // Use getBoundingClientRect for accurate position regardless of transforms/offsets
+        const footerBottom = window.scrollY + footer.getBoundingClientRect().bottom;
+        const max = Math.max(0, footerBottom - window.innerHeight);
+        if (window.scrollY > max) {
+            busy = true;
+            window.scrollTo(0, max);
+            requestAnimationFrame(() => { busy = false; });
         }
     }
 

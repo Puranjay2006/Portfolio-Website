@@ -108,6 +108,7 @@ html {
     background: var(--color-bg);
     transition: background-color var(--transition-slow);
     overflow-x: clip;
+    overscroll-behavior: none;
 }
 
 body {
@@ -2152,10 +2153,10 @@ footer,
         font-size: clamp(2.2rem, 10vw, 3rem);
     }
 
-    /* Hero roles — shrink on tiny screens */
+    /* Hero roles — stack and centre on tiny screens */
     .hero-roles {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 6px;
     }
 
@@ -2197,6 +2198,32 @@ footer,
     /* Edu grid stack */
     .edu-grid {
         grid-template-columns: 1fr;
+    }
+
+    /* Chatbot widget — smaller margin, panel anchored left on tiny screens */
+    .chatbot-widget {
+        bottom: 16px;
+        right: 16px;
+    }
+
+    .chatbot-panel {
+        right: calc(-16px + 28px - 28px); /* flush to widget right edge */
+        height: min(480px, calc(100dvh - 120px));
+    }
+
+    /* Section header number + title wrapping */
+    .section-header {
+        gap: var(--spacing-xs);
+    }
+
+    /* Scroll indicator hidden on small screens */
+    .scroll-indicator {
+        display: none;
+    }
+
+    /* About wins card */
+    .about-wins-list {
+        gap: var(--spacing-sm);
     }
 }
 
@@ -2876,7 +2903,7 @@ footer,
     position: absolute;
     bottom: calc(52px + 12px); /* sit above the toggle button */
     right: 0;
-    width: 360px;
+    width: min(360px, calc(100vw - 32px));
     height: 520px;
     background: var(--color-bg-secondary);
     border-radius: 18px;
