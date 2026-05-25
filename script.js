@@ -121,9 +121,20 @@ function initNavigation() {
     const navbar = document.querySelector('.navbar');
     const navLinks = document.querySelectorAll('.nav-links a, .mobile-nav-links a');
 
-    window.addEventListener('scroll', () => {
-        navbar.classList.toggle('scrolled', window.pageYOffset > 50);
+    // Slide the navbar in shortly after page load
+    requestAnimationFrame(() => {
+        setTimeout(() => {
+            navbar.classList.add('nav-visible');
+        }, 120);
     });
+
+    // Scroll state: enhanced frosted-glass when not at top
+    function updateNavState() {
+        const scrolled = window.pageYOffset > 60;
+        navbar.classList.toggle('scrolled', scrolled);
+    }
+    window.addEventListener('scroll', updateNavState, { passive: true });
+    updateNavState();
 
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
@@ -300,7 +311,7 @@ window.addEventListener('scroll', () => {
 function init3DCardTilt() {
     if (window.matchMedia('(pointer: coarse)').matches) return; // skip on touch
 
-    const cards = document.querySelectorAll('.project-card, .award-card, .edu-card');
+    const cards = document.querySelectorAll('.award-card, .edu-card');
 
     cards.forEach(card => {
         card.addEventListener('mouseenter', () => {
