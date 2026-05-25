@@ -21,7 +21,73 @@ document.addEventListener('DOMContentLoaded', () => {
     initPageCanvas();
     initChatbot();
     initScrollClamp();
+    initLightbox();
 });
+
+// ==========================================
+// Lightbox — full-size image preview
+// ==========================================
+function initLightbox() {
+    const overlay  = document.getElementById('lightboxOverlay');
+    const imgEl    = document.getElementById('lightboxImg');
+    const caption  = document.getElementById('lightboxCaption');
+    const closeBtn = document.getElementById('lightboxClose');
+    if (!overlay) return;
+
+    // Inject magnify button into every project-image that has a real img
+    document.querySelectorAll('.project-image').forEach(container => {
+        if (!container.querySelector('.project-img')) return;
+        const btn = document.createElement('button');
+        btn.className  = 'project-magnify';
+        btn.setAttribute('aria-label', 'View full image');
+        btn.innerHTML  = '<i class="fas fa-search-plus"></i>';
+        container.appendChild(btn);
+    });
+
+    function openLightbox(src, alt) {
+        imgEl.src = src;
+        imgEl.alt = alt;
+        caption.textContent = alt;
+        overlay.classList.add('open');
+        overlay.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        overlay.classList.remove('open');
+        overlay.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+        // Clear src after fade-out so next open doesn't flash old image
+        setTimeout(() => { imgEl.src = ''; }, 280);
+    }
+
+    // Click on image or magnify button to open
+    document.querySelectorAll('.project-image').forEach(container => {
+        const img    = container.querySelector('.project-img');
+        const magnify = container.querySelector('.project-magnify');
+        if (!img) return;
+
+        [img, magnify].filter(Boolean).forEach(el => {
+            el.addEventListener('click', e => {
+                e.stopPropagation();
+                openLightbox(img.src, img.alt);
+            });
+        });
+    });
+
+    // Close on overlay background click
+    overlay.addEventListener('click', e => {
+        if (e.target === overlay) closeLightbox();
+    });
+
+    // Close button
+    closeBtn.addEventListener('click', closeLightbox);
+
+    // Escape key
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape' && overlay.classList.contains('open')) closeLightbox();
+    });
+}
 
 // ==========================================
 // Scroll Clamp — prevent scrolling past footer
