@@ -659,7 +659,7 @@ function initChatbot() {
             'Yatree: Tourism app concept that reached the Grand Finale of Toycathon 2021 (Ministry of Education, India).',
         ],
         skills:       'Python, Java, JavaScript, TypeScript, C, C++, SQL, R, HTML, CSS. React, Next.js, Vite, Tailwind CSS, FastAPI, Streamlit, Pandas, NumPy, scikit-learn, TensorFlow. Web3: ENS, EAS, MetaMask, wagmi, viem, Base/Sepolia. Design: Adobe InDesign, Photoshop, Canva.',
-        experience:   'Digital & Design Executive Intern at Capital Media Partners (Nov 2025 - Mar 2026): I built their website, automated 300+ business records via Python, led digital marketing to 535+ posts, and designed regional Wall Planners.',
+        experience:   'Digital & Design Executive at Capital Media Partners (Nov 2025 - Mar 2026): I built their website, automated 300+ business records via Python, led digital marketing to 535+ posts, and designed regional Wall Planners.',
         volunteering: "Technical Executive at Google Developer Groups on Campus, UoA (Mar 2026 - Present): I lead workshops and hackathons for a 180+ member community, organised ALLUNI 2026 (23 clubs, 9 cities), and delivered an NFC workshop to 40+ attendees. I'm also a TalkCampus Ambassador for mental health awareness since Aug 2025.",
         certifications: 'Supervised Machine Learning (DeepLearning.AI, Coursera), Advanced Learning Algorithms (DeepLearning.AI, Coursera), Certified Game Developer (WhiteHat Jr, 2021).',
         location:     'Auckland, New Zealand',
