@@ -419,11 +419,11 @@ function initTypewriter() {
     if (!el) return;
 
     const phrases = [
-        'Building Web3 apps and AI platforms.',
-        'CS student at the University of Auckland.',
-        'Hackathon builder. 2x winner.',
-        'Frontend dev with a thing for ML.',
+        'Computer Science student at the University of Auckland.',
         'Technical Executive at GDG on Campus UoA.',
+        'Digital & Design Executive at Capital Media Partners.',
+        'Hackathon builder. 2x winner.',
+        'Frontend dev with ML and Web3 experience.',
     ];
 
     let phraseIndex = 0;
@@ -641,7 +641,7 @@ function initChatbot() {
         linkedin: 'linkedin.com/in/pg142/',
         github:   'github.com/Puranjay2006',
         about:    "I started building for the web at 14. My team and I built the first ever digital magazine of our school: over 20,000 lines of code from scratch. I'm a CS student, hackathon builder, and frontend developer with a growing passion for AI and ML, currently studying at the University of Auckland.",
-        degree:   'Bachelor of Science in Computer Science at the University of Auckland (2nd Year, Mar 2026 - Nov 2027)',
+        degree:   'Bachelor of Science in Computer Science at the University of Auckland (2nd Year, Mar 2026 - May 2028)',
         prevEdu:  'Diploma in Science and Technology at Massey University, GPA 8.7/9.0 (A+ average)',
         minor:    'Minor in Artificial Intelligence & Data Science from IIT Mandi × Masai School',
         gpa:      '8.7/9.0 (A+ average) at Massey University',
@@ -658,7 +658,7 @@ function initChatbot() {
             'Flying High Digital Magazine: My team and I built the first ever digital magazine of our school. Over 20,000 lines of code, 400+ hours of work.',
             'Yatree: Tourism app concept that reached the Grand Finale of Toycathon 2021 (Ministry of Education, India).',
         ],
-        skills:       'Python, Java, JavaScript, TypeScript, C, C++, SQL, R, HTML, CSS. React, Next.js, Vite, Tailwind CSS, FastAPI, Streamlit, Pandas, NumPy, scikit-learn, TensorFlow. Web3: ENS, EAS, MetaMask, wagmi, viem, Base/Sepolia. Design: Adobe InDesign, Photoshop, Canva.',
+        skills:       'Python, Java, JavaScript, TypeScript, C++, SQL, R, HTML/CSS, Git. React, Next.js, FastAPI, Streamlit, Pandas, NumPy, Scikit-learn, TensorFlow, Shapely, Folium. Web3: ENS, EAS, MetaMask, NFT Minting, On-chain Credentials, Stablecoin Integration, Base/Sepolia. Databases & Cloud: MongoDB, PostgreSQL, Firebase, Supabase, Google Cloud, Google Maps API, Gemini API, Anthropic API. Design: Adobe InDesign, Photoshop, Canva.',
         experience:   'Digital & Design Executive at Capital Media Partners (Nov 2025 - Mar 2026): I built their website, automated 300+ business records via Python, led digital marketing to 535+ posts, and designed regional Wall Planners.',
         volunteering: "Technical Executive at Google Developer Groups on Campus, UoA (Mar 2026 - Present): I lead workshops and hackathons for a 180+ member community, organised ALLUNI 2026 (23 clubs, 9 cities), and delivered an NFC workshop to 40+ attendees. I'm also a TalkCampus Ambassador for mental health awareness since Aug 2025.",
         certifications: 'Supervised Machine Learning (DeepLearning.AI, Coursera), Advanced Learning Algorithms (DeepLearning.AI, Coursera), Certified Game Developer (WhiteHat Jr, 2021).',
