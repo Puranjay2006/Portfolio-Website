@@ -422,6 +422,7 @@ function initTypewriter() {
         'Computer Science student at the University of Auckland.',
         'Technical Executive at GDG on Campus UoA.',
         'Digital & Design Executive at Capital Media Partners.',
+        'Software Developer Intern at Canary Data Solutions.',
         'Hackathon builder. 2x winner.',
         'Frontend dev with ML and Web3 experience.',
     ];
