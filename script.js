@@ -419,11 +419,10 @@ function initTypewriter() {
     if (!el) return;
 
     const phrases = [
-        'Computer Science student at the University of Auckland.',
-        'Technical Executive at GDG on Campus UoA.',
-        'Digital & Design Executive at Capital Media Partners.',
-        'Software Developer Intern at Canary Data Solutions.',
+        'Software Development Intern at Canary Data Solutions.',
+        'Co-President of GDG on Campus UoA.',
         'Hackathon builder. 2x winner.',
+        'Full-stack and ML student at the University of Auckland.',
         'Frontend dev with ML and Web3 experience.',
     ];
 
@@ -641,27 +640,27 @@ function initChatbot() {
         email:    'puranjay.gambhir@gmail.com',
         linkedin: 'linkedin.com/in/pg142/',
         github:   'github.com/Puranjay2006',
-        about:    "I started building for the web at 14. My team and I built the first ever digital magazine of our school: over 20,000 lines of code from scratch. I'm a CS student, hackathon builder, and frontend developer with a growing passion for AI and ML, currently studying at the University of Auckland.",
-        degree:   'Bachelor of Science in Computer Science at the University of Auckland (2nd Year, Mar 2026 - May 2028)',
+        about:    'Penultimate Computer Science student with full-stack, machine learning, and industry experience as a current Software Development Intern. Co-President of a Google-backed community of 450+ members and lead organiser of an international programming contest, having won 2 hackathons through strong innovation and teamwork. Passionate about building impactful projects and actively seeking software engineering or technical internships where I can apply my skills to real-world problems.',
+        degree:   'Bachelor of Science in Computer Science (2nd Year) at the University of Auckland, March 2026 - Nov 2027 (Expected)',
         prevEdu:  'Diploma in Science and Technology at Massey University, GPA 8.7/9.0 (A+ average)',
         minor:    'Minor in Artificial Intelligence & Data Science from IIT Mandi × Masai School',
         gpa:      '8.7/9.0 (A+ average) at Massey University',
-        hackathons: "I've won 2 hackathons. 1st place at the DEVS x SESA 2026 Beginners Hackathon with StarGaze. Dual Sponsor Track Winner at WEB3UOA Hackathon. Won both the Avalanche and NewMoney tracks with L2Earn.",
+        hackathons: 'I have won 2 hackathons: 1st place at the DEVS x SESA 2026 Beginners Hackathon with StarGaze, and the Dual Sponsor Track at WEB3UOA Hackathon with L2Earn.',
         awards:   '1st Place DEVS x SESA 2026, Dual Sponsor Winner WEB3UOA, Youth Solves for India Contest Winner, Regional Finalist Wharton Global High School Investment Competition (Top 10 of 972 global teams), Grand Finale of Toycathon 2021, Most Studious Student 2025 at Massey.',
         projects: [
-            'L2Earn: Web3 learn-to-earn DApp. Humans and AI agents earn NFT credentials and settle dNZD stablecoin rewards on Base Sepolia. Dual Sponsor Winner at WEB3UOA Hackathon.',
-            'StarGaze: Stargazing planning app unifying cloud cover, light pollution, and live ISS tracking. 1st place, DEVS x SESA 2026 Hackathon.',
-            'Civic Connect: AI-powered civic platform. Auto-categorises issues via Gemini API, visualises via Google Maps. Youth Solves for India Contest Winner.',
-            'Route Continuity Gap Detector: Geospatial ML tool (IsolationForest + Shapely) built in a 24-hour hackathon sprint.',
+            'L2Earn: Won the Dual Sponsor Track (Avalanche and NewMoney) at WEB3UOA Hackathon by engineering wallet functionality using wagmi and viem, including master-to-customer wallet transfers settling dNZD stablecoin rewards on Base Sepolia.',
+            'StarGaze: Won 1st Place at the DEVS x SESA 2026 Beginners Hackathon by leading frontend development, integrating Open-Meteo, wheretheiss.at, and OpenStreetMap Nominatim APIs into a single stargazing planning app within a 48-hour sprint.',
+            'Civic Connect: Won the Youth Solves for India Contest by leading full-stack development of an AI-powered civic platform, handling the majority of the work within a 2-day sprint.',
+            'Route Continuity Gap Detector: Led the majority of development on a geospatial QA tool that detects road-network endpoint gaps using Shapely geometry checks and an unsupervised IsolationForest ML model, built within a 24-hour Hackathon sprint.',
             'noso Company Platform: Frontend of a full-stack web app with auth, bookings, payments, and admin dashboards.',
-            'Capital Media Partners Website: Responsive company website with 300+ business records synced via Python automation.',
+            'Capital Media Partners Website: Responsive company website with a booking modal, automating Excel data sync for 300+ business records and saving 40+ hours of manual data entry across 15+ industries and 60+ categories.',
             'Community Wall Planners: 2025-2026 wall planners for 4 Auckland regions, designed in Adobe InDesign.',
             'Flying High Digital Magazine: My team and I built the first ever digital magazine of our school. Over 20,000 lines of code, 400+ hours of work.',
             'Yatree: Tourism app concept that reached the Grand Finale of Toycathon 2021 (Ministry of Education, India).',
         ],
-        skills:       'Python, Java, JavaScript, TypeScript, C++, SQL, R, HTML/CSS, Git. React, Next.js, FastAPI, Streamlit, Pandas, NumPy, Scikit-learn, TensorFlow, Shapely, Folium. Web3: ENS, EAS, MetaMask, NFT Minting, On-chain Credentials, Stablecoin Integration, Base/Sepolia. Databases & Cloud: MongoDB, PostgreSQL, Firebase, Supabase, Google Cloud, Google Maps API, Gemini API, Anthropic API. Design: Adobe InDesign, Photoshop, Canva.',
+        skills:       'Python, Java, JavaScript, TypeScript, C, C++, C#, VB.NET, SQL, HTML/CSS, R, Git, Agile/Scrum. React, Next.js, ASP.NET, FastAPI, Streamlit, Pandas, NumPy, scikit-learn, TensorFlow, Shapely, Folium. Supervised & Unsupervised Learning, Neural Networks, Ensemble Methods, Anomaly Detection. MongoDB, PostgreSQL, Firebase, Supabase, Google Cloud, Google Maps API, Gemini API, Anthropic API. ENS, EAS, MetaMask, NFT Minting, On-chain Credentials, Stablecoin Integration, Base/Sepolia.',
         experience:   'Software Developer Intern at Canary Data Solutions (Jul 2026 - Present): I develop and maintain business software solutions and databases, liaise with clients, prepare user documentation, and build across C#, VB.NET, ASP.NET, and SQL. Digital & Design Executive at Capital Media Partners (Nov 2025 - Mar 2026): I built their website, automated 300+ business records via Python, led digital marketing to 535+ posts, and designed regional Wall Planners.',
-        volunteering: "Technical Executive at Google Developer Groups on Campus, UoA (Mar 2026 - Present): I lead workshops and hackathons for a 180+ member community, organised ALLUNI 2026 (23 clubs, 9 cities), and delivered an NFC workshop to 40+ attendees. I'm also a TalkCampus Ambassador for mental health awareness since Aug 2025.",
+        volunteering: 'Co-President at Google Developer Groups on Campus, UoA (Aug 2026 - Present): I oversee coordination across executive teams and drive club growth toward a 550+ member target. As Technical Executive, I led workshops and hackathons for a 450+ member community, organised ALLUNI 2026 (23 clubs, 9 cities, 2 countries), and delivered an NFC workshop to 40+ attendees. I’m also a TalkCampus Ambassador for mental health awareness since Aug 2025.',
         certifications: 'Supervised Machine Learning (DeepLearning.AI, Coursera), Advanced Learning Algorithms (DeepLearning.AI, Coursera), Certified Game Developer (WhiteHat Jr, 2021).',
         location:     'Auckland, New Zealand',
     };
@@ -697,7 +696,7 @@ function initChatbot() {
             return { topic: 'greet', text: "Hey! Ask me anything: my projects, skills, experience, or how to get in touch." };
 
         if (/who (is|are) (puranjay|you|this)|tell me about (you|yourself|puranjay)|about you|introduce/.test(m))
-            return { topic: 'identity', text: `${kb.about}\n\nI've won 2 hackathons and I'm currently the Technical Executive at GDG on Campus UoA.` };
+            return { topic: 'identity', text: `${kb.about}\n\nI've won 2 hackathons and I'm currently Co-President of GDG on Campus UoA.` };
 
         if (/l2earn/.test(m))
             return { topic: 'l2earn', text: `L2Earn is my Web3 learn-to-earn DApp, built at WEB3UOA Hackathon. Humans and AI agents complete learning modules, earn NFT credentials via EAS attestation, and settle dNZD stablecoin rewards on Base Sepolia. It won both the Avalanche and NewMoney sponsor tracks.\n\nStack: Next.js, React, TypeScript, Tailwind, wagmi, viem, ENS, EAS.` };
@@ -738,7 +737,7 @@ function initChatbot() {
             return { topic: 'experience', text: `Work: ${kb.experience}\n\nVolunteering: ${kb.volunteering}` };
 
         if (/gdg|google|developer group|gdgc|tech exec|leadership|workshop|alluni/.test(m))
-            return { topic: 'gdg', text: `I'm the Technical Executive at Google Developer Groups on Campus, UoA (since March 2026). I lead workshops and hackathons for a 180+ member community, organised ALLUNI 2026 (23 clubs, 9 cities), and delivered an NFC workshop to 40+ attendees.` };
+            return { topic: 'gdg', text: `I'm Co-President at Google Developer Groups on Campus, UoA (since Aug 2026). I oversee coordination across executive teams and drive club growth toward a 550+ member target. As Technical Executive, I led workshops and hackathons for a 450+ member community, organised ALLUNI 2026 (23 clubs, 9 cities, 2 countries), and delivered an NFC workshop to 40+ attendees.` };
 
         if (/contact|reach|email|linkedin|social|hire|hiring|available|get in touch|connect/.test(m))
             return { topic: 'contact', text: `Best ways to reach me:\n\nEmail: ${kb.email}\nLinkedIn: ${kb.linkedin}\nGitHub: ${kb.github}\n\nI'm pretty quick to respond.` };
