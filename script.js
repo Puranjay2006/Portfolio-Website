@@ -119,7 +119,7 @@ function initScrollClamp() {
 // ==========================================
 function initNavigation() {
     const navbar = document.querySelector('.navbar');
-    const navLinks = document.querySelectorAll('.nav-links a, .mobile-nav-links a');
+    const navLinks = document.querySelectorAll('.nav-links a, .mobile-nav-links a, .logo');
 
     // Slide the navbar in shortly after page load
     requestAnimationFrame(() => {
@@ -346,33 +346,6 @@ function init3DCardTilt() {
 }
 
 // ==========================================
-// Magnetic Buttons
-// ==========================================
-function initMagneticButtons() {
-    if (window.matchMedia('(pointer: coarse)').matches) return;
-
-    const magnets = document.querySelectorAll('.btn-primary, .btn-outline');
-
-    magnets.forEach(btn => {
-        btn.addEventListener('mouseenter', () => {
-            btn.style.transition = 'transform 0.1s ease, box-shadow 0.2s ease, background 0.25s ease, color 0.25s ease';
-        });
-
-        btn.addEventListener('mousemove', (e) => {
-            const rect = btn.getBoundingClientRect();
-            const x = (e.clientX - rect.left - rect.width / 2) * 0.25;
-            const y = (e.clientY - rect.top - rect.height / 2) * 0.25;
-            btn.style.transform = `translate(${x}px, ${y}px)`;
-        });
-
-        btn.addEventListener('mouseleave', () => {
-            btn.style.transition = 'transform 0.35s cubic-bezier(0.23,1,0.32,1), box-shadow 0.2s ease, background 0.25s ease, color 0.25s ease';
-            btn.style.transform = 'translate(0, 0)';
-        });
-    });
-}
-
-// ==========================================
 // Animated Stat Counters
 // ==========================================
 function initCounterAnimations() {
@@ -419,11 +392,11 @@ function initTypewriter() {
     if (!el) return;
 
     const phrases = [
+        'Penultimate Computer Science student with Full-Stack & ML experience.',
         'Software Development Intern at Canary Data Solutions.',
-        'Co-President of GDG on Campus UoA.',
-        'Hackathon builder. 2x winner.',
-        'Full-stack and ML student at the University of Auckland.',
-        'Frontend dev with ML and Web3 experience.',
+        'Digital & Design Executive — Capital Media Partners (Nov 2025–Mar 2026).',
+        'Co-President of a Google-backed GDG on Campus (450+ members).',
+        '2x Hackathon winner — building projects under tight deadlines.',
     ];
 
     let phraseIndex = 0;
@@ -640,7 +613,7 @@ function initChatbot() {
         email:    'puranjay.gambhir@gmail.com',
         linkedin: 'linkedin.com/in/pg142/',
         github:   'github.com/Puranjay2006',
-        about:    'Penultimate Computer Science student with full-stack, machine learning, and industry experience as a current Software Development Intern. Co-President of a Google-backed community of 450+ members and lead organiser of an international programming contest, having won 2 hackathons through strong innovation and teamwork. Passionate about building impactful projects and actively seeking software engineering or technical internships where I can apply my skills to real-world problems.',
+        about:    'Penultimate Computer Science student with Full-Stack, Machine Learning, and industry experience as a current Software Development Intern, alongside prior startup experience. Co-President of a Google-backed community of 450+ members and lead organiser of an international programming contest, having won 2 hackathons through strong innovation and teamwork. Passionate about building impactful projects. Actively seeking software engineering or technical internships where I can apply my skills to real-world problems.',
         degree:   'Bachelor of Science in Computer Science (2nd Year) at the University of Auckland, March 2026 - Nov 2027 (Expected)',
         prevEdu:  'Diploma in Science and Technology at Massey University, GPA 8.7/9.0 (A+ average)',
         minor:    'Minor in Artificial Intelligence & Data Science from IIT Mandi × Masai School',
@@ -659,7 +632,7 @@ function initChatbot() {
             'Yatree: Tourism app concept that reached the Grand Finale of Toycathon 2021 (Ministry of Education, India).',
         ],
         skills:       'Python, Java, JavaScript, TypeScript, C, C++, C#, VB.NET, SQL, HTML/CSS, R, Git, Agile/Scrum. React, Next.js, ASP.NET, FastAPI, Streamlit, Pandas, NumPy, scikit-learn, TensorFlow, Shapely, Folium. Supervised & Unsupervised Learning, Neural Networks, Ensemble Methods, Anomaly Detection. MongoDB, PostgreSQL, Firebase, Supabase, Google Cloud, Google Maps API, Gemini API, Anthropic API. ENS, EAS, MetaMask, NFT Minting, On-chain Credentials, Stablecoin Integration, Base/Sepolia.',
-        experience:   'Software Developer Intern at Canary Data Solutions (Jul 2026 - Present): I develop and maintain business software solutions and databases, liaise with clients, prepare user documentation, and build across C#, VB.NET, ASP.NET, and SQL. Digital & Design Executive at Capital Media Partners (Nov 2025 - Mar 2026): I built their website, automated 300+ business records via Python, led digital marketing to 535+ posts, and designed regional Wall Planners.',
+        experience:   'Software Developer Intern — Canary Data Solutions (Jul 2026 - Present): Developing and maintaining business software solutions and databases; liaising with clients; preparing user documentation and performance testing. Digital & Design Executive — Capital Media Partners (Nov 2025 - Mar 2026): Built the company website and automated Excel data workflows for 300+ business records.',
         volunteering: 'Co-President at Google Developer Groups on Campus, UoA (Aug 2026 - Present): I oversee coordination across executive teams and drive club growth toward a 550+ member target. As Technical Executive, I led workshops and hackathons for a 450+ member community, organised ALLUNI 2026 (23 clubs, 9 cities, 2 countries), and delivered an NFC workshop to 40+ attendees. I’m also a TalkCampus Ambassador for mental health awareness since Aug 2025.',
         certifications: 'Supervised Machine Learning (DeepLearning.AI, Coursera), Advanced Learning Algorithms (DeepLearning.AI, Coursera), Certified Game Developer (WhiteHat Jr, 2021).',
         location:     'Auckland, New Zealand',
@@ -734,7 +707,7 @@ function initChatbot() {
             return { topic: 'gpa', text: `At Massey University I achieved ${kb.gpa}. I was awarded Most Studious Student 2025 and received "Excelling" academic progress in both semesters.` };
 
         if (/experience|intern|work|job|capital media|career/.test(m))
-            return { topic: 'experience', text: `Work: ${kb.experience}\n\nVolunteering: ${kb.volunteering}` };
+            return { topic: 'experience', text: `Work: ${kb.experience}` };
 
         if (/gdg|google|developer group|gdgc|tech exec|leadership|workshop|alluni/.test(m))
             return { topic: 'gdg', text: `I'm Co-President at Google Developer Groups on Campus, UoA (since Aug 2026). I oversee coordination across executive teams and drive club growth toward a 550+ member target. As Technical Executive, I led workshops and hackathons for a 450+ member community, organised ALLUNI 2026 (23 clubs, 9 cities, 2 countries), and delivered an NFC workshop to 40+ attendees.` };
