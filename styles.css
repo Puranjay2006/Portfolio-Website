@@ -1339,7 +1339,7 @@ footer,
 }
 
 /* ==========================================
-   Timeline Updates — Experience
+   Timeline Updates - Experience
    ========================================== */
 .timeline-header {
     margin-bottom: var(--spacing-md);
@@ -1371,7 +1371,7 @@ footer,
 }
 
 /* ==========================================
-   Project Cards — Header & External Links
+   Project Cards - Header & External Links
    ========================================== */
 .project-card--accent {
     border-color: rgba(14, 165, 233, 0.4);
@@ -1577,7 +1577,7 @@ footer,
 }
 
 /* ==========================================
-   Skills — Pill Layout (replaces bar layout)
+   Skills - Pill Layout (replaces bar layout)
    ========================================== */
 .skills-content {
     display: flex;
@@ -1922,7 +1922,7 @@ footer,
 }
 
 /* ==========================================
-   Resume Button — Stand-out styling
+   Resume Button - Stand-out styling
    ========================================== */
 .btn-resume {
     box-shadow: 0 0 0 0 rgba(14, 165, 233, 0.4), var(--shadow-md);
@@ -1986,7 +1986,7 @@ footer,
         flex-wrap: wrap;
     }
 
-    /* About stats — stack on mobile */
+    /* About stats - stack on mobile */
     .about-stats {
         grid-template-columns: 1fr;
         gap: var(--spacing-md);
@@ -2008,7 +2008,7 @@ footer,
         gap: var(--spacing-sm);
     }
 
-    /* Contact card value — ellipsis on small screens */
+    /* Contact card value - ellipsis on small screens */
     .contact-value {
         font-size: var(--font-size-xs);
         overflow: hidden;
@@ -2050,7 +2050,7 @@ footer,
         font-size: clamp(2.2rem, 10vw, 3rem);
     }
 
-    /* Hero roles — stack and centre on tiny screens */
+    /* Hero roles - stack and centre on tiny screens */
     .hero-roles {
         flex-direction: column;
         align-items: center;
@@ -2061,7 +2061,7 @@ footer,
         display: none;
     }
 
-    /* Floating badges — hide on tiny screens */
+    /* Floating badges - hide on tiny screens */
     .floating-badges {
         display: none;
     }
@@ -2097,7 +2097,7 @@ footer,
         grid-template-columns: 1fr;
     }
 
-    /* Chatbot widget — smaller margin, panel anchored left on tiny screens */
+    /* Chatbot widget - smaller margin, panel anchored left on tiny screens */
     .chatbot-widget {
         bottom: 16px;
         right: 16px;
@@ -2125,7 +2125,7 @@ footer,
 }
 
 /* ==========================================
-   Hero Roles — static pill display
+   Hero Roles - static pill display
    ========================================== */
 .hero-roles {
     display: flex;
@@ -2262,7 +2262,7 @@ footer,
 }
 
 /* ==========================================
-   UoA & BSc — linked text with slide underline
+   UoA & BSc - linked text with slide underline
    ========================================== */
 .uoa-link,
 .bsc-link {
@@ -2283,7 +2283,7 @@ footer,
     background-size: 100% 2px;
 }
 
-/* hero-meta UoA link — inherits pill styling, override color */
+/* hero-meta UoA link - inherits pill styling, override color */
 .hero-meta-item .uoa-link {
     color: var(--color-text-secondary);
     font-weight: 500;
@@ -2296,7 +2296,7 @@ footer,
 }
 
 /* ==========================================
-   About — Wins & Roles Cards
+   About - Wins & Roles Cards
    ========================================== */
 .about-wins-card,
 .about-roles-card {

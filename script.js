@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ==========================================
-// Lightbox — full-size image preview
+// Lightbox: full-size image preview
 // ==========================================
 function initLightbox() {
     const overlay  = document.getElementById('lightboxOverlay');
@@ -90,7 +90,7 @@ function initLightbox() {
 }
 
 // ==========================================
-// Scroll Clamp — prevent scrolling past footer
+// Scroll Clamp: prevent scrolling past footer
 // ==========================================
 function initScrollClamp() {
     const footer = document.querySelector('footer');
@@ -175,7 +175,7 @@ function initNavigation() {
 }
 
 // ==========================================
-// Theme — default dark, respect saved pref
+// Theme: default dark, respect saved pref
 // ==========================================
 function initThemeDefault() {
     const savedTheme = localStorage.getItem('theme') || 'dark';
@@ -294,7 +294,7 @@ function initScrollToTop() {
 }
 
 // ==========================================
-// Parallax — Hero Orbs
+// Parallax: Hero Orbs
 // ==========================================
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
@@ -385,7 +385,7 @@ function initCounterAnimations() {
 }
 
 // ==========================================
-// Typewriter — Hero
+// Typewriter: Hero
 // ==========================================
 function initTypewriter() {
     const el = document.getElementById('typewriter-text');
@@ -394,9 +394,9 @@ function initTypewriter() {
     const phrases = [
         'Penultimate Computer Science student with Full-Stack & ML experience.',
         'Software Development Intern at Canary Data Solutions.',
-        'Digital & Design Executive — Capital Media Partners (Nov 2025–Mar 2026).',
+        'Digital & Design Executive, Capital Media Partners (Nov 2025-Mar 2026).',
         'Co-President of a Google-backed GDG on Campus (450+ members).',
-        '2x Hackathon winner — building projects under tight deadlines.',
+        '2x Hackathon winner, building projects under tight deadlines.',
     ];
 
     let phraseIndex = 0;
@@ -632,7 +632,7 @@ function initChatbot() {
             'Yatree: Tourism app concept that reached the Grand Finale of Toycathon 2021 (Ministry of Education, India).',
         ],
         skills:       'Python, Java, JavaScript, TypeScript, C, C++, C#, VB.NET, SQL, HTML/CSS, R, Git, Agile/Scrum. React, Next.js, ASP.NET, FastAPI, Streamlit, Pandas, NumPy, scikit-learn, TensorFlow, Shapely, Folium. Supervised & Unsupervised Learning, Neural Networks, Ensemble Methods, Anomaly Detection. MongoDB, PostgreSQL, Firebase, Supabase, Google Cloud, Google Maps API, Gemini API, Anthropic API. ENS, EAS, MetaMask, NFT Minting, On-chain Credentials, Stablecoin Integration, Base/Sepolia.',
-        experience:   'Software Developer Intern — Canary Data Solutions (Jul 2026 - Present): Developing and maintaining business software solutions and databases; liaising with clients; preparing user documentation and performance testing. Digital & Design Executive — Capital Media Partners (Nov 2025 - Mar 2026): Built the company website and automated Excel data workflows for 300+ business records.',
+        experience:   'Software Developer Intern, Canary Data Solutions (Jul 2026 - Present): building and maintaining business software solutions and databases, shipping a client reporting feature, and fixing production SQL issues. Digital & Design Executive, Capital Media Partners (Nov 2025 - Mar 2026): Built the company website and automated Excel data workflows for 300+ business records.',
         volunteering: 'Co-President at Google Developer Groups on Campus, UoA (Aug 2026 - Present): I oversee coordination across executive teams and drive club growth toward a 550+ member target. As Technical Executive, I led workshops and hackathons for a 450+ member community, organised ALLUNI 2026 (23 clubs, 9 cities, 2 countries), and delivered an NFC workshop to 40+ attendees. I’m also a TalkCampus Ambassador for mental health awareness since Aug 2025.',
         certifications: 'Supervised Machine Learning (DeepLearning.AI, Coursera), Advanced Learning Algorithms (DeepLearning.AI, Coursera), Certified Game Developer (WhiteHat Jr, 2021).',
         location:     'Auckland, New Zealand',
@@ -661,7 +661,7 @@ function initChatbot() {
         fallback: ['Who are you?', 'What have you built?', 'How can I contact you?'],
     };
 
-    // ---- Response logic — returns { text, topic } ----
+    // ---- Response logic: returns { text, topic } ----
     function getResponse(msg) {
         const m = msg.toLowerCase().trim();
 
